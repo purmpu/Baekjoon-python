@@ -1,1 +1,4 @@
-내일
+a = input()
+ 
+print (ord(a))
+
