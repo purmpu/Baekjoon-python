@@ -40,3 +40,20 @@ for a in result:
     
     
 일단 이 코드는 메모리 초과가 떠서 틀렸다. 그런데 작성하면서 카운팅정렬을 이해하려고 쓴 주석들이 너무 길어서 써둠
+
+밑은 메모리초과 안넘기기 위해 쓴 코드
+https://yoonsang-it.tistory.com/49 님의 코드를 참고했는데 그냥 똑같다..
+
+
+import sys
+
+n = int(sys.stdin.readline())
+num_list = [0] * 10001
+
+for _ in range(n):
+    num_list[int(sys.stdin.readline())] += 1
+
+for i in range(10001):
+    if num_list[i] != 0:
+        for j in range(num_list[i]):
+            print(i)
