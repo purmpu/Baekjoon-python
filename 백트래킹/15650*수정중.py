@@ -9,8 +9,8 @@ def bcktrck(a):
     else:
         for j in range(a,n+1):
             if j not in l:
-                l.append(j)
-                bcktrck(a+1)
+                l.append(j) 
+                bcktrck(j+1) #j를 써서 앞자리보다 작은 수가 뒤에 나오지 않게 해준다
                 l.pop() 
 
 bcktrck(1)
