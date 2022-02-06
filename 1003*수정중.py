@@ -9,3 +9,6 @@ for i in range(t):
         one = one + zero
         zero = tmp
     print(zero, one)
+
+    
+    https://pacific-ocean.tistory.com/107  님 코드
