@@ -18,3 +18,9 @@ a = sorted(l)
 print(a[0])
 
 근데 메모리랑 시간이 더 늘어났다 왜지
+
+2022 03 05 아 이게 더 짧게 되네
+
+x,y,w,h = map(int,input().split())
+l = [w-x,h-y,x,y]
+print(sorted(l)[0])
